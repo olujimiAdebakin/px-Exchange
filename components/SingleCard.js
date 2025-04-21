@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/outline";
 import { ethers } from "ethers";
 
-const SingleCard = ({ index, name, walletAddress }) => {
+const SingleCard = ({ index, name, walletAddress, displayName }) => {
   const [balance, setBalance] = useState("-");
   const [tokenAddress, setTokenAddress] = useState();
   const [copyIcon, setCopyIcon] = useState({

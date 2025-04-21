@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from "react";
-import {useAccount} from "./wagmi"
+import {useAccount} from "wagmi"
 import {ethers} from "ethers";
 import toast, {Toaster} from "react-hot-toast";
 import {
@@ -34,7 +34,8 @@ export default function Card(){
               <SingleCard
                 key={key}
                 index={index + 1}
-                name={name}
+                name={key}
+                 displayName={name} 
                 walletAddress={address}
               />
             ))}
