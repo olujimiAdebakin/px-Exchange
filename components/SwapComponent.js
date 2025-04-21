@@ -98,7 +98,7 @@ export default function SwapComponent() {
   return (
     <>
       
-      <div className="border-[1px] rounded-l border-[#7765F3] bg-[#7765F3] w-[100%] p-4 px-6 rounded-xl">
+      <div className="border-[1px] rounded-l border-[#7765F3] bg-[#7765F3] p-4 px-6 rounded-xl">
         <div className="flex items-center justify-between py-4 px-1">
           <p>Swap your tokens below:</p>
           <CogIcon className="h-6" />
