@@ -131,7 +131,8 @@ export default function Header() {
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              <Logo />
+              {/* <Logo /> */}
+              <h1 className="text-white text-3xl font-bold">Peer X</h1>
             </a>
 
             <ul className="flex items-center">
