@@ -5,8 +5,8 @@
 
 
 // // INTERNAL
-// import { Menu, Logo, TokenBalance } from "./index"
-// export default function Header() {
+// imp  ort { Menu, Logo, TokenBalance } from "./index"
+// expor  t default function Header() {
 //   const [tokenBalComp, setTokenBalComp] = useState();
 //   const { address } = useAccount();
 
@@ -99,13 +99,14 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 import toast, { Toaster } from "react-hot-toast";
 
+
 // INTERNAL
 import { Menu, Logo, TokenBalance } from "./index";
 
 // const tokens = ["PASER", "PX"];
 // Add more tokens here if needed
 
-const tokens = ["Tether USD", "BNB", "PAX Coin", "stETH", "TRON", "PASER", "PX", "Uniswap"];
+const tokens = ["PAX Coin", "PASER", "PX"];
 
 
 export default function Header() {
@@ -159,7 +160,7 @@ export default function Header() {
 
           {/* Token balances and wallet button */}
           <div className="items-center gap-4 flex-shrink-0 hidden lg:flex">
-            {isConnected &&
+            {isConnected && 
               tokens.map((token, i) => (
                 <TokenBalance key={i} name={token} walletAddress={address} />
               ))}
